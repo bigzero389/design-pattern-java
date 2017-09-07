@@ -1,0 +1,4 @@
+a1@bigzero.com=Kim
+b1@bigzero.com=Lee
+c1@bigzero.com=Kang
+d1@bigzero.com=Park

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="strategy.StrategyMain" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/StrategyMain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="161" y="335"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="strategy.Player" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/Player.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="410" y="335"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="strategy.Strategy" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/Strategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="668" y="336"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="strategy.Rule" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/Rule.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="177" y="149"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="strategy.Result" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/Result.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="412" y="128"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="strategy.Hand" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/Hand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="642" y="130"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="strategy.WinningStrategy" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/WinningStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="667" y="515"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="strategy.OnlyOneStrategy" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/OnlyOneStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="416" y="515"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="strategy.ProbStrategy" project="DesignPattern" 
+    file="/DesignPattern/src/strategy/ProbStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="195" x="779" y="431"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="11" name="strategy"/>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="13">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="14" name="yourHand"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="16">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <realization id="17">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="19">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="20">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="21" name="history"/>      
+      <multiplicity id="22" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="24" name="myHand"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
